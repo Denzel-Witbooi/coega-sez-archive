@@ -7,14 +7,16 @@ A visual archive of drone imagery and video footage for the Coega Special Econom
 ## Screenshots
 
 ### Full Page Overview
-![Home page overview](./docs/screenshots/home-overview.png)
+![Home page overview](./docs/screenshots/home-overview.jpg)
 
 ### Zone Detail Page and Corporate Video Modal
-![Zone detail page with investor sections](./docs/screenshots/zone-detail.png)
+![Zone detail page with investor sections](./docs/screenshots/zone-detail.jpg)
 
 ### Investor Zones Grid
 
-![Coega SEZ investor zones grid](./docs/screenshots/zones-grid.png)
+![Coega SEZ investor zones grid](./docs/screenshots/zones-grid.jpg)
+![Coega SEZ investor zones grid](./docs/screenshots/zones-grid_desktop.jpg)
+
 
 ---
 
