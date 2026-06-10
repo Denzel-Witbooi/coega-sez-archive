@@ -9,6 +9,7 @@ import FeaturedStrip from '../components/FeaturedStrip'
 import ZonesGrid from '../components/ZonesGrid'
 import VideoModal from '../components/VideoModal'
 import { corporateVideos, droneFootage } from '../data/media'
+import Attribution from '../components/Attribution'
 
 export default function Home() {
   const [activeVideo, setActiveVideo] = useState(null)
@@ -89,8 +90,10 @@ export default function Home() {
           <ZonesGrid />
         </section>
       </main>
-
+  
       <Footer />
+      <Attribution />
+    
 
       {activeVideo && (
         <VideoModal

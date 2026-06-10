@@ -1,3 +1,14 @@
+// ─── CONTENT CONFIG ──────────────────────────────────────────────────────────
+// Set isPublic to false to immediately disable all media and show the holding
+// page. One value change + one redeploy takes the content offline in minutes.
+
+export const CONTENT_CONFIG = {
+  isPublic: true,
+  organisation: "Coega Development Corporation",
+  notice: "All drone imagery and video © Coega Development Corporation. Used for portfolio demonstration purposes only. Not monetised.",
+  takedownContact: "dwitbooi41@gmail.com", // add your email if you want to show a contact line
+}
+
 const CLOUD = "https://res.cloudinary.com/dpluujmr3/image/upload";
 const BASE = `${CLOUD}/coega/images`;
 

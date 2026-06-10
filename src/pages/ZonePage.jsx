@@ -6,7 +6,7 @@ import ZoneHero from '../components/ZoneHero'
 import InvestorNav from '../components/InvestorNav'
 import InvestorSection from '../components/InvestorSection'
 import { zones } from '../data/media'
-
+import Attribution from '../components/Attribution'
 export default function ZonePage() {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -77,7 +77,9 @@ export default function ZonePage() {
         })}
       </main>
 
+      
       <Footer locationText={`${zone.label} — Nelson Mandela Bay`} />
+      <Attribution />
     </>
   )
 }
