@@ -22,7 +22,7 @@ export default function HeroSection() {
         </h1>
         <p className={styles.body}>
           Aerial documentation of the Nelson Mandela Bay Logistics Park
-          and investor zones — captured by drone across the full SEZ footprint.
+          and Coega SEZ investor zones, captured by drone across the full SEZ footprint.
         </p>
         <div className={styles.stats}>
           <div className={styles.stat}>

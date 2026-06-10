@@ -1,0 +1,50 @@
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--off-white);
+    border: none;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+.item img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s var(--ease-out);
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+.zoom {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(9, 15, 35, 0.60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.item:hover .zoom {
+    opacity: 1;
+}
+
+/* Always visible on touch devices */
+@media (hover: none) {
+    .zoom {
+        opacity: 1;
+        background: rgba(9, 15, 35, 0.45);
+    }
+}

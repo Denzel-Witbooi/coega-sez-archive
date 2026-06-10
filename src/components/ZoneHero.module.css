@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    height: clamp(280px, 45vw, 420px);
+    overflow: hidden;
+    background: var(--navy-deep);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.55);
+}
+
+/* Desktop: gradient goes left-to-right so text sits on the left */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(9, 15, 35, 0.85) 0%,
+            rgba(9, 15, 35, 0.20) 70%,
+            transparent 100%);
+}
+
+.content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: clamp(24px, 4vw, 56px) var(--pad) clamp(28px, 4vw, 48px);
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: clamp(16px, 3vw, 32px);
+    align-self: flex-start;
+    min-height: 44px;
+    transition: color 0.2s;
+    padding: 0;
+}
+
+.backLink:hover {
+    color: var(--gold);
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: clamp(48px, 10vw, 72px);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 3vw, 24px);
+    flex-wrap: wrap;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--white-dim);
+}
+
+.metaDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.green {
+    background: var(--green);
+}
+
+.gold {
+    background: var(--gold);
+}
+
+.metaDivider {
+    width: 1px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Mobile: gradient switches to bottom-to-top */
+@media (max-width: 640px) {
+    .overlay {
+        background: linear-gradient(to top,
+                rgba(9, 15, 35, 0.90) 0%,
+                rgba(9, 15, 35, 0.30) 60%,
+                transparent 100%);
+    }
+
+    .metaDivider {
+        display: none;
+    }
+}

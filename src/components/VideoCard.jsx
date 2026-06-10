@@ -18,7 +18,7 @@ export default function VideoCard({ video, onPlay }) {
       </div>
 
       <div className={styles.overlay}>
-        <span className={styles.tag}>{video.category}</span>
+        {/* <span className={styles.tag}>{video.category}</span> */}
         <span className={styles.title}>{video.title}</span>
       </div>
 

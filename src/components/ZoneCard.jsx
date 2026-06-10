@@ -25,7 +25,7 @@ export default function ZoneCard({ zone }) {
       />
       <div className={styles.overlay} />
       <div className={styles.content}>
-        <span className={styles.eyebrow}>{zone.label}</span>
+        {/* <span className={styles.eyebrow}>{zone.label}</span> */}
         <span className={styles.name}>{zone.label}</span>
         <div className={styles.meta}>
           <span className={styles.dot} />

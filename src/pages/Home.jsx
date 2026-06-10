@@ -29,7 +29,7 @@ export default function Home() {
         <section className={styles.sectionVideo}>
           <div className={styles.sectionHeader}>
             <div>
-              <div className={`eyebrow eyebrow-light`}>Video</div>
+              {/* <div className={`eyebrow eyebrow-light`}>Video</div> */}
               <h2 className="section-title section-title--light">
                 Corporate &amp; Documentary
               </h2>
