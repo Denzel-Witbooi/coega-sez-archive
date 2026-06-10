@@ -1,0 +1,138 @@
+/* ── FONT IMPORT ── */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap');
+
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── CSS VARIABLES ── */
+:root {
+  /* Brand */
+  --navy:         #183172;
+  --navy-deep:    #0e1e47;
+  --gold:         #FDC300;
+  --green:        #009640;
+
+  /* Surfaces */
+  --white:        #ffffff;
+  --off-white:    #f4f6fb;
+
+  /* Text on light surfaces */
+  --text-dark:    #0d1833;
+  --text-mid:     #4a5568;
+  --text-light:   #8a94a6;
+
+  /* Text on dark surfaces */
+  --white-dim:    rgba(245, 247, 255, 0.65);
+  --white-muted:  rgba(245, 247, 255, 0.40);
+
+  /* Borders */
+  --border-light: rgba(24, 49, 114, 0.10);
+  --border-dark:  rgba(255, 255, 255, 0.08);
+  --border-inv:   rgba(255, 255, 255, 0.15);
+
+  /* Layout */
+  --pad: clamp(24px, 5vw, 56px);
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ── BASE ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── REUSABLE EYEBROW ── */
+/* Usage: apply .eyebrow-light (on dark bg) or .eyebrow-dark (on light bg) */
+.eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 1px;
+  flex-shrink: 0;
+}
+
+.eyebrow-light {
+  color: var(--gold);
+}
+.eyebrow-light::before {
+  background: var(--gold);
+}
+
+.eyebrow-navy {
+  color: var(--navy);
+}
+.eyebrow-navy::before {
+  background: var(--navy);
+}
+
+/* ── SECTION HEADER ── */
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-title--light { color: var(--white); }
+.section-title--dark  { color: var(--text-dark); }
+
+.section-count {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+
+.section-count--light { color: var(--white-muted); }
+.section-count--dark  { color: var(--text-light); }
