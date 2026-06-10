@@ -1,0 +1,56 @@
+/* ── VIDEO SECTION ── */
+.sectionVideo {
+    background: var(--navy-deep);
+    padding: clamp(48px, 6vw, 72px) var(--pad);
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.videoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.droneEyebrow {
+    margin-bottom: 16px;
+}
+
+.droneRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 640px) {
+    .videoGrid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .droneRow {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+}
+
+/* ── FEATURED IMAGES SECTION ── */
+.sectionFeatured {
+    background: var(--white);
+    padding: clamp(48px, 6vw, 72px) var(--pad);
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* ── ZONES SECTION ── */
+.sectionZones {
+    background: var(--navy-deep);
+    padding: clamp(48px, 6vw, 72px) var(--pad) 72px;
+}
