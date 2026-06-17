@@ -147,4 +147,3 @@ npm run build
 
 All drone imagery and video © Coega Development Corporation.  
 Used for portfolio demonstration purposes only. Not monetised.  
-This project is not affiliated with or endorsed by Coega Development Corporation.
